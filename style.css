@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-/* aqui declaramos variables globales para css */
 :root{ 
 --pale-blue: hsl(225, 100%, 94%);
 --bright-blue: hsl(245, 75%, 52%);
@@ -13,7 +12,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* si añadieramos un padding a derecha o izquierda, el ancho total se modificaria, cosa que no queremos, por ello para que se respetan las dimensiones, usamos */
     box-sizing: border-box;
 }
 
@@ -32,9 +30,7 @@ body{
     background-color: white;
     color: var(--desaturated-blue);
     border-radius: 20px ;
-    /* la imagen tapa los bordes redondos, por ello usaremos la siguiente propiedad */
     overflow: hidden;
-    /* para centrar la imagen se hace asi */
     margin: 50px auto;
 }
 
@@ -45,22 +41,17 @@ body{
 }
 
 .hero-image{
-    /* va tener la misma dimension que el elemento padre que lo contiene */
     width: 100%;
 }
 
 .container {
-    /* flex se utiliza para que las cajas se coloquen como celdas de una tabla */
     display: flex;
-    /* indica que el orden es en vertical */
     flex-direction: column;
-    /* para que las cajas esten centradas */
     justify-content: center;
     text-align: center;
     padding: 30px;
     font-size: 18px;
 }
-/* significa que todos los hijos, heredaran esta propiedad */
 .container > *{
     margin: 13px 0;
 }
@@ -79,7 +70,6 @@ body{
     border-radius: 12px;
     display: flex;
     flex-direction: row;
-    /* distribuye el espacio entre cajas */
     justify-content: space-between;
     align-items: center;
   }
@@ -97,7 +87,6 @@ body{
   
   .plan-description {
     margin-right: 75px;
-    /* espacio entre las lineas */
     line-height: 20px;
   }
 button{
@@ -112,11 +101,9 @@ button{
     background-color: var(--bright-blue);
     padding: 1rem 0;
     color: white;
-    /* https://developer.mozilla.org/es/docs/Web/CSS/box-shadow */
     box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
   
 }
-/* se activa cuando el usuario se desplaza sobre un elemento con el cursor  */
 .proceed-button:hover{
     opacity: 0.8;
 }
